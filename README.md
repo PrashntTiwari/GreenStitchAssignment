@@ -8,11 +8,9 @@ Installation and Setup
 - Maven
 - Postman (for testing the API)
 1. Clone the Repository
+https://github.com/PrashntTiwari/GreenStitchAssignment?search=1
 
-2. Go the Project
-cd GreenStich_Backend_Assignment/GreenStitch_Backend_Assignment
-
-3. Run the Application
+2. Run the Application
 For GitBash
 ./mvnw spring-boot:run
 
@@ -26,16 +24,16 @@ Description: Register a new user.
 Request Body: User data in the JSON format (e.g., name, email, password).
 
 {
-  "fullName": "Shimbhu Kumawat",
-  "password": "Shimbhu@123",
-  "email": "sk@gmail.com"
+  "fullName": "Prashant Tiwari",
+  "password": "Prashant@123",
+  "email": "pt@gmail.com"
 }
 Response:
 {
     "id": 1,
-    "fullName": "Shimbhu Kumawat",
-    "password": "$2a$10$KVzpEHKFpX2ephA7RXLgqumnZKFy3bT8wdJMW3tYH2yqUJcpZPGSG",
-    "email": "sk@gmail.com",
+    "fullName": "Prashant Tiwari",
+    "password": "@23hjkaik%^",
+    "email": "pt@gmail.com",
     "role": "ROLE_USER"
 }
 
@@ -44,14 +42,14 @@ Method: GET
 Path: http://localhost:8081/signIn
 Description: Authenticate a user and retrieve their details.
 Authentication: Basic Authentication (Username and Password)
-Username: sk@gmail.com
-Password: Shimbhu@123
+Username: pt@gmail.com
+Password: Prashant@123
 Response:
 {
     "id": 1,
-    "fullName": "Shimbhu Kumawat",
-    "password": "$2a$10$KVzpEHKFpX2ephA7RXLgqumnZKFy3bT8wdJMW3tYH2yqUJcpZPGSG",
-    "email": "sk@gmail.com",
+    "fullName": "Prashant Tiwari",
+    "password": "@23hjkaik%^",
+    "email": "pt@gmail.com",
     "role": "ROLE_USER"
 }
 
@@ -63,10 +61,8 @@ Authentication: Bearer Token
 Request Header:
 Authorization: Bearer
 Response: A welcome message string.
-Example:
-Bearer Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTaGltYmh1Iiwic3ViIjoiSldUIFRva2VuIiwidXNlcm5hbWUiOiJza0BnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg1Njc3Mzg3LCJleHAiOjE2ODU3MDczODd9.VwM2IGD1fABjEcnNoMb4uIyBnYe3_BmZGx33dElaD-E
-Response: Welcome to Shimbhu's Website: Shimbhu Kumawat
-Tech Stack
+
+Tech Stack :-
 Java
 Spring Boot
 H2 Database
@@ -105,7 +101,7 @@ server.port=8081
 # H2 Database Configuration
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
+spring.datasource.username=pt
 spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.h2.console.enabled=true
